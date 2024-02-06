@@ -1,5 +1,5 @@
 ---
-title: "Active Sensor presentation"
+title: "IBUKI-2 satellite presentation"
 author: "Lama Alswliman"
 institute: "RStudio"
 date: "16/01/2024"
@@ -10,40 +10,35 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
----
-
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
-
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
-
-???
-
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
-
----
-class: center, middle
-
-# xaringan
-
-### /ʃaː.'riŋ.ɡan/
-
+      
 ---
 class: inverse, center, middle
 
-# Get Started
+#IBUKI-2
 
 ---
+class: left, inverse 
 
-# Hello World
+#What is the IBUKI-2 satellite ? 
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+* Also known as GOSAT 2 is a satellite that was launched in 2018.
 
-```{r eval=FALSE, tidy=FALSE}
-remotes::install_github("yihui/xaringan")
+* This satellite is designed to monitor greenhouse gases.
+
+* Measure the levels of carbon dioxide, methane, ozone, and water vapor in the atmosphere.
+
+* Measure the carbon monoxide and nitrogen dioxide levels.
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("GOSAT2_JAXA4X3.jpg")
+
 ```
 
+
+---
+class: left, inverse
+
+# Other facts about IBUKI-2 satellite
 --
 
 You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
@@ -65,9 +60,10 @@ You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rs
 ]
 
 ---
-background-image: url(`r xaringan:::karl`)
-background-position: 50% 50%
-class: center, bottom, inverse
+background-image: url("background2.jpg")
+background-size: cover
+background-color: rgba(255, 255, 255, 0.2)
+class: center, bottom
 
 # You only live once!
 
