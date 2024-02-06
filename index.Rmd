@@ -41,10 +41,7 @@ class: left, inverse
 # Other facts about IBUKI-2 satellite
 --
 
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
-
+* GOSAT-2 has an  FTS (Fourier Transform Spectrometer) and Imager instruments 
 --
 
 - Click the `Knit` button to compile it;
