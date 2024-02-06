@@ -41,10 +41,15 @@ class: left, inverse
 # Other facts about IBUKI-2 satellite
 --
 
-* GOSAT-2 has an  FTS (Fourier Transform Spectrometer) and Imager instruments 
+* GOSAT-2 has an  FTS (Fourier Transform Spectrometer) and Imager instruments.
+
+* The FTS measures greenhouse gas concentrations in the Earth's atmosphere.
+
+* The Imager captures images of the Earth's surface for tasks like land cover mapping and vegetation monitoring. 
+
 --
 
-- Click the `Knit` button to compile it;
+* 
 
 --
 
