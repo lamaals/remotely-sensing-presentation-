@@ -15,11 +15,14 @@ output:
 class: inverse, center, middle
 
 #IBUKI-2
-
+ 
 ---
-class: left, inverse 
+class: left
 
-#What is the IBUKI-2 satellite ? 
+# Summary 1: 
+--
+
+## What is the IBUKI-2 satellite ? 
 
 * Also known as GOSAT 2 is a satellite that was launched in 2018.
 
@@ -29,199 +32,82 @@ class: left, inverse
 
 * Measure the carbon monoxide and nitrogen dioxide levels.
 
-```{r echo=FALSE, out.width='100%', fig.align='center'}
+```{r echo=FALSE, out.width='50%', fig.align='center'}
 knitr::include_graphics("GOSAT2_JAXA4X3.jpg")
 
 ```
 
 
 ---
-class: left, inverse
+class: center , inverse
 
-# Other facts about IBUKI-2 satellite
+# Summary 2:  
 --
+
+## IBUKI-2 satellite Details
+
+.pull-left[
 
 * GOSAT-2 has an  FTS (Fourier Transform Spectrometer) and Imager instruments.
 
---
-
 * The FTS measures greenhouse gas concentrations in the Earth's atmosphere.
 
---
+* The Imager captures images of the Earth's surface for tasks like land cover mapping. 
+]
 
-* The Imager captures images of the Earth's surface for tasks like land cover mapping and vegetation monitoring. 
+ .pull-right[
+ 
+* Orbiting altitude 613KM
 
---
+* Revisiting frequency 3 days
 
-* 
+* Spectral resolution 0.2 cm-1
 
---
+* Orbiting type Sun-synchronous
 
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](https://slides.yihui.org/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
 ]
 
 ---
-background-image: url("background2.jpg")
-background-size: cover
-background-color: rgba(255, 255, 255, 0.2)
-class: center, bottom
+class: left
+# Summary 3: 
+--
 
-# You only live once!
+##The process of IBKUI-2 works 
 
----
+GOSAT-2 uses advanced sensors like the Fourier Transform Spectrometer (FTS) and Cloud and Aerosol Imager (CAI) to monitor carbon dioxide levels. It corrects received data for atmospheric interference and instrument noise onboard before transmitting it to ground stations. Ground-based analysis and calibration provide valuable insights into climate change and environmental monitoring, influencing policy decisions and enhancing our understanding of Earth's climate system.
 
-# Hello Ninja
-
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
-
-1. The [remark.js](https://remarkjs.com) library;
-
-1. The **xaringan** package;
-
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
-
----
-
-# remark.js
-
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
-
-- create a new slide (Markdown syntax<sup>*</sup> and slide properties);
-
-- format a slide (e.g. text alignment);
-
-- configure the slideshow;
-
-- and use the presentation (keyboard shortcuts).
-
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
-
----
-background-image: url(`r xaringan:::karl`)
-background-size: cover
-class: center, bottom, inverse
-
-# I was so happy to have discovered remark.js!
-
----
-class: inverse, middle, center
-
-# Using xaringan
-
----
-
-# xaringan
-
-Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.
-
-```yaml
----
-title: "A Cool Presentation"
-output:
-  xaringan::moon_reader:
-    yolo: true
-    nature:
-      autoplay: 30000
----
-```
-
-See the help page `?xaringan::moon_reader` for all possible options that you can use.
-
----
-
-# remark.js vs xaringan
-
-Some differences between using remark.js (left) and using **xaringan** (right):
-
-.pull-left[
-1. Start with a boilerplate HTML file;
-
-1. Plain Markdown;
-
-1. Write JavaScript to autoplay slides;
-
-1. Manually configure MathJax;
-
-1. Highlight code with `*`;
-
-1. Edit Markdown source and refresh browser to see updated slides;
-]
-
-.pull-right[
-1. Start with an R Markdown document;
-
-1. R Markdown (can embed R/other code chunks);
-
-1. Provide an option `autoplay`;
-
-1. MathJax just works;<sup>*</sup>
-
-1. Highlight code with `{{}}`;
-
-1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
-]
-
-.footnote[[*] Not really. See next page.]
-
----
-
-# Math Expressions
-
-You can write LaTeX math expressions inside a pair of dollar signs, e.g. &#36;\alpha+\beta$ renders $\alpha+\beta$. You can use the display style with double dollar signs:
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+knitr::include_graphics("40645_2023_562_Figa_HTML.jpg")
 
 ```
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-```
-
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-
-Limitations:
-
-1. The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
-
-1. There should not be spaces after the opening `$` or before the closing `$`.
-
-1. Math does not work on the title slide (see [#61](https://github.com/yihui/xaringan/issues/61) for a workaround).
-
 ---
 
-# R Code
+class: left , inverse 
 
-```{r comment='#'}
-# a boring regression
-fit = lm(dist ~ 1 + speed, data = cars)
-coef(summary(fit))
-dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
-grep('天', dojutsu, value = TRUE)
-```
+# Summary 4:
+--
 
+## The benefits of GOSAT satellites
+
+The GOSAT satellites, have been invaluable tools over their years of operation. Ibuki, in particular, has played a pivotal role in:
+
+* Supporting policymakers in formulating new climate legislation.
+
+* Gathering diverse datasets to aid climate researchers and scientists in comprehending the environmental effects of human activities.
+
+* Enhancing our understanding of the origins of greenhouse gas emissions and strategies for mitigation.
+
+* Documenting rare occurrences like solar eclipses and volcanic eruptions, providing unique insights into Earth's phenomena.
+ 
 ---
+class: center
 
-# R Plots
+# Summary 4:
+--
 
-```{r cars, fig.height=4, dev='svg'}
-par(mar = c(4, 4, 1, .1))
-plot(cars, pch = 19, col = 'darkgray', las = 1)
-abline(fit, lwd = 2)
-```
+## The benefits of GOSAT satellites
 
----
-
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-```{r}
-knitr::kable(head(iris), format = 'html')
-```
-
+<iframe width="640" height="360" src="https://www.youtube.com/embed/PPsdlItQkXs?si=cCkp0oDqE0FnJWaq" frameborder="0" allowfullscreen></iframe>
 ---
 
 # HTML Widgets
