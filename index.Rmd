@@ -186,6 +186,8 @@ class: left , inverse
 
 * Overall, GOSAT-2 plays a crucial role in efforts aimed at mitigating climate change by providing accurate data and informing policy decisions.
 
+* The applications discussed in this presentation constitute only a fraction of larger applications.
+
 ---
 class: left , inverse 
 
